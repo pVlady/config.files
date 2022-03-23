@@ -1,0 +1,346 @@
+{
+  "python.analysis.diagnosticSeverityOverrides": {
+    "reportGeneralTypeIssues":"error"
+  },
+  // terminal
+   "terminal.integrated.profiles.windows": {
+     "Git Bash": {
+       "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+       "args": []
+       },
+     "python REPL": {
+          "path": "C:\\Users\\vlady\\AppData\\Local\\Anaconda3\\envs\\tenv\\python.exe",
+          "args": ["-q"]
+      }
+   },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  "terminal.integrated.tabs.enabled": false,
+  "terminal.integrated.fontFamily": "Fira Code",
+  "terminal.integrated.fontSize": 13,
+  "terminal.integrated.fontWeight": 1,
+  "terminal.integrated.fontWeightBold": 1,
+  "terminal.integrated.lineHeight": 1.5,
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "underline",
+  "terminal.integrated.inheritEnv": false,
+  // files
+  "files.encoding": "utf8",
+  "files.autoSaveDelay": 10000,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.trimTrailingWhitespace": true, /* убирать хвостовые пробелы при сохранении */
+  "files.exclude": {
+    ".gitignore": true,
+    "**/__pycache__/": true,
+    "**/.pytest_cache/": true
+  },
+  "search.exclude": { // удалить из поиска
+    ".gitignore": true,
+    "**/.vscode/": true,
+    "**/.idea/": true,
+    "**/__pycache__/": true,
+    "**/.pytest_cache/": true
+  },
+  // explorer
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  // editor
+  "editor.fontFamily": "Source Code Pro",
+  "editor.fontWeight": "1",
+  "editor.letterSpacing": 0.2,
+  "editor.fontLigatures": true,
+  "editor.wordWrap": "on",
+  "editor.tabCompletion": "on",
+  "editor.minimap.enabled": false,
+  "editor.snippetSuggestions": "top", /* перенести сниппеты вверх списка */
+  "editor.linkedEditing": true,       /* автоматическое переименование */
+  "editor.detectIndentation": true,
+  "editor.formatOnSave": false,       /* форматировать код при сохранении */
+  "editor.guides.bracketPairs": true, /* выделять вертикальной чертой парные скобки */
+  "editor.formatOnPaste": true,       /*форматировать код при вставке (html) */
+  "editor.suggestSelection": "first",
+  "editor.quickSuggestionsDelay": 0,  /* show the code suggestion immediately (not after some seconds) */
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.rulers": [
+    { "column": 80, "color": "#2f2f2f" }
+  ],
+  "editor.guides.bracketPairsHorizontal":  false, /*hide horizontal guide line enhancing*/
+
+  // json
+  "[json]": {
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "off",
+  },
+
+  // markdown
+  "[markdown]": {
+    "editor.renderWhitespace": "all",
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.parameterHints.enabled": false,
+    "editor.quickSuggestions": false,
+    "editor.snippetSuggestions": "none",
+  },
+
+  // python
+  "[python]": {
+    "editor.tabSize": 4,
+    "editor.insertSpaces": true,
+    "editor.defaultFormatter": "ms-python.python",
+    // "files.encoding": "windows1251"
+  },
+  "python.languageServer": "Default",
+  "python.linting.enabled": true,
+  "python.linting.pycodestyleEnabled": false,
+  "python.linting.pylintEnabled": true,
+  "python.linting.flake8Enabled": false,
+  "python.pythonPath": "C:\\Users\\vlady\\AppData\\Local\\Anaconda3\\envs\\tenv\\python.exe",
+  "python.condaPath": "C:\\Users\\vlady\\AppData\\Local\\Anaconda3\\Scripts\\conda.exe",
+  "python.analysis.cacheFolderPath": "J:\\Temp\\PythonCache",
+  "python.analysis.typeCheckingMode": "basic",
+  "python.analysis.logLevel": "Warning",
+  "python.analysis.completeFunctionParens": true,
+  "python.autoComplete.addBrackets": true,
+  "pythonIndent.trimLinesWithOnlyWhitespace": true,
+  "python.formatting.provider": "black",
+  "pythonTestExplorer.testFramework": "pytest",
+  "python.jediEnabled": false,
+  "jupyter.jupyterLaunchRetries": 2,
+  //"jupyter.maxOutputSize": 800,
+  "jupyter.askForKernelRestart": false,
+  "jupyter.themeMatplotlibPlots": true,
+
+  // R
+  "r.rpath.windows": "C:\\Users\\vlady\\AppData\\Local\\R\\R-4.1.2\\bin\\x64\\R.exe",
+
+  // ms sql
+  "mssql.format.keywordCasing": "uppercase",
+  "mssql.resultsFontSize": 12,
+  "mssql.applyLocalization": true,
+  "mssql.saveAsCsv.lineSeparator": "–",
+  "mssql.saveAsCsv.encoding": "windows-1251",
+  "mssql.connections": [
+    {
+      "server": "SQLMAIN\\SQLSVR",
+      "database": "KLBooks",
+      "authenticationType": "Integrated",
+      "profileName": "BookManager",
+      "password": ""
+    }
+  ],
+
+  // sql tools
+  "sqltools.connections": [
+    {
+      "database": "C:\\Users\\vlady\\AppData\\Local\\MyNotes\\myNotes.dat",
+      "dialect": "SQLite",
+      "name": "MyNotes"
+    }
+  ],
+  "sqltools.useNodeRuntime": true,
+  "breadcrumbs.enabled": true, /* включениме хлебных крошек */
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "vsintellicode.features.python.deepLearning": "enabled",
+  "vsintellicode.typescript.completionsEnabled": false,
+  "vsintellicode.java.completionsEnabled": false,
+  "workbench.iconTheme": "ayu",
+  "workbench.colorTheme": "Base16 Dark Ashes",
+
+  /* EXTENSIONS */
+  /* Code Runner */
+  "code-runner.clearPreviousOutput": true,
+  "code-runner.defaultLanguage": "python", /* язык по умолчанию для запуска фрагмента кода, если он расположен в файле .md или аналогичном */
+  "code-runner.executorMap": {
+    "python": "set PYTHONIOENCODING=utf8 && $pythonPath -u $fullFileName",
+    "r": "C:\\Users\\vlady\\AppData\\Local\\R\\R-4.1.0\\bin\\x64\\Rscript.exe"
+  },
+
+  /* Better Comments */
+  "better-comments.tags": [
+    { "tag": "!",    "color": "#ff2d00", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": "?",    "color": "#3498db", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": "//",   "color": "#474747", "strikethrough": true,  "backgroundColor": "transparent" },
+    { "tag": "todo", "color": "#ff8c00", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": "*",    "color": "#98c379", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": "•",    "color": "#d1f1a9", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": ".",    "color": "#e5f550", "strikethrough": false, "backgroundColor": "transparent" },
+    { "tag": "%%",   "color": "#888888", "strikethrough": false, "backgroundColor": "transparent" }
+  ],
+
+  /* Gist */
+  "sync.gist": "a2e9f1af98c663d1deef39fc658c870d",
+
+  /* Progect Manager */
+  "projectManager.openInNewWindowWhenClickingInStatusBar": true, /* всегда открывать проекты в новом окне */
+
+  "blockhighlight.background": ["100", "100", "100", "0.1"],
+
+  /*------------------------------------------------------------------------*/
+  /* COLORIZE SETTINGS */
+  /*------------------------------------------------------------------------*/
+  "workbench.colorCustomizations": {
+    "better-comments.highlightPlainText": true,
+    "bracket-pair-colorizer-2.colors": [ "Gold", "Orchid", "LightSkyBlue" ],
+    "bracketPairColorizer.consecutivePairColors": [
+      "()", "[]", "{}",
+      ["Gold", "Orchid", "LightSkyBlue"],
+      "Red"
+    ],
+    "todo-tree.tree.showScanModeButton": false,
+    "[Base16 Dark Ashes]": {
+      /*
+        // sidebar: панель файлов
+        "sideBar.background" : "#212121",
+        "sideBar.foreground" : "#cacaca",
+        // statusbar: статусная строка
+        "statusBar.background": "#393F45",
+        "statusBar.foreground": "#ffffff",
+        // menu
+        "menu.background": "#393F45",
+        // dropdaown lists
+        "dropdown.background": "#1C2023",
+        "dropdown.border": "#565656",
+        "dropdown.listBackground": "#1C2023",
+        // command palette
+        "list.focusBackground": "#452010",
+        "quickInput.background": "#393F45",
+        "quickInput.foreground": "#bcbcbc",
+        // панель управления
+        "activityBar.background": "#070707",
+        "editor.background": "#060a0c"
+*/
+      //"sideBySideEditor.border": "#00ff00",  // разделитель для side-by-side editor
+      "sideBar.background": "#303132",
+      "sideBar.foreground": "#cacaca",
+      "statusBar.background": "#292F31",
+      "statusBar.foreground": "#ffffff",
+      "menu.background": "#393F45",
+      "dropdown.background": "#1C2023",
+      "dropdown.border": "#565656",
+      "dropdown.listBackground": "#1C2023",
+      "list.focusBackground": "#452010",
+      "quickInput.background": "#393F45",
+      "quickInput.foreground": "#bcbcbc",
+      "activityBar.background": "#070808",
+      "editor.background": "#1b1d21",
+      "editorIndentGuide.background": "#2f2f2f",
+      "editorIndentGuide.activeBackground": "#454545"
+    },
+    "window.menuBarVisibility": "default"
+  },
+  "editor.tokenColorCustomizations": {
+    "[Tomorrow Night Blue]": {
+      "comments": "#9cdddd",
+      "textMateRules": [
+        {
+          "scope": "comment.line.number-sign.python",
+          "settings": {
+            "foreground": "#8baf9e"
+          } // default #7285B7 (used: #88a08f)
+        },
+        {
+          "scope": "string.quoted.docstring.multi.python",
+          "settings": {
+            "foreground": "#7fceb0"
+          } // default #d1f1a9 (used: #adccb7 #64caa3)
+        },
+      ],
+    },
+    "[Base16 Dark Ashes]": {
+      "textMateRules": [
+        /*          { "scope": "color01", "settings": { "foreground": "#f3f4f5" }},  /* white        */
+        /*          { "scope": "color02", "settings": { "foreground": "#c7ccd1" }},  /* darkwhite    */
+        /*          { "scope": "color08", "settings": { "foreground": "#afaeae" }},  /* grey         */
+        /*          { "scope": "color05", "settings": { "foreground": "#95aec7" }},  /* blue         */
+        /*          { "scope": "color04", "settings": { "foreground": "#949ca4" }},  /* darkblue     */
+        /*          { "scope": "color09", "settings": { "foreground": "#c795ae" }},  /* pink         */
+        /*          { "scope": "color03", "settings": { "foreground": "#aec795" }},  /* lightgreen   */
+        /*          { "scope": "color06", "settings": { "foreground": "#95c7ae" }},  /* green        */
+        /*          { "scope": "color11", "settings": { "foreground": "#a7ca85" }},  /* altreen  */
+        /*          { "scope": "color11", "settings": { "foreground": "#c7c795" }},  /* yellowgreen  */
+        /*          { "scope": "color13", "settings": { "foreground": "#f6c965" }},  /* brightyellow */
+        /*          { "scope": "color12", "settings": { "foreground": "#d1b77d" }},  /* apricot      */
+        /*          { "scope": "color10", "settings": { "foreground": "#c7ae95" }},  /* lightbrown   */
+        /*          { "scope": "color07", "settings": { "foreground": "#af1a3f" }},  /* red          */
+
+        {"scope": "punctuation.definition.string.end.python",   "settings": {"foreground": "#9dc4b6"}},   /* кавычки в начале строки */
+        {"scope": "punctuation.definition.string.begin.python", "settings": {"foreground": "#9dc4b6"}},   /* кавычки в конце строки */
+        {"scope": "string",                                     "settings": {"foreground": "#9dc4b6"}},   /* строковое значение */
+        {"scope": "string.quoted.docstring.multi.python",       "settings": {"foreground": "#adafb4"}},   /* документ-строка*/
+        {"scope": "comment.line.number-sign.python",            "settings": {"foreground": "#97989a"}},   /* строчный комментарий #8baf9e# */
+        {"scope": "comment.block",                              "settings": {"foreground": "#949CA4"}},   /* блочный комментарий, напр. как этот в json */
+        {"scope": "constant.character.escape",                  "settings": {"foreground": "#c795ae"}},   /* экранированная Esc-последовательность */
+        {"scope": "constant.numeric",                           "settings": {"foreground": "#f6c965"}},   /* числовая константа */
+        {"scope": "support.function",                           "settings": {"foreground": "#95aec7"}},   /* встроенные функции python */
+        {"scope": "entity.name.function",                       "settings": {"foreground": "#ffc795"}},   /* определение функций и методов */
+        {"scope": "support.function.magic.python",              "settings": {"foreground": "#ffc795"}},   /* магические функции */
+        { "scope": "meta.function-call.generic.python",         "settings": {"foreground": "#f3dfcfee"}}, /* вызовы библиотечных функций и методов классов */
+        {"scope": "variable.parameter.function",                "settings": {"foreground": "#cec06f",     /* параметры в определении функций */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "meta.function-call.arguments.python",        "settings": {"foreground": "#bdbfc4"}},   /* аргументы в вызовах функций и методов */
+        {"scope": "variable.parameter.function-call.python",    "settings": {"foreground": "#cec06f",     /* именованный параметр в вызове функции или метода */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "variable.language.special.self.python",      "settings": {"foreground": "#cfac8d",     /* идентификатор self */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "constant.language.python",                   "settings": {"foreground": "#95aec7"}},   /* встроенные в python константы (True, False, None) */
+        {"scope": "storage.type.string",                        "settings": {"foreground": "#c795ae"}},   /* символ <f> в f-строках */
+        {"scope": "meta.fstring.python",                        "settings": {"foreground": "#ffffff"}},   /* аргументы f-строк */
+        {"scope": "constant.character",                         "settings": {"foreground": "#ffffff"}},   /* {} в f-строке*/
+        {"scope": "entity.name.type",                           "settings": {"foreground": "#ffb3b3"}},   /* название класса #efaec7 */
+        {"scope": "keyword.control.flow",                       "settings": {"foreground": "#c795ae",     /* if / else / while /  return / with / as */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "keyword.control.import",                     "settings": {"foreground": "#c795ae",     /* инструкция import */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "keyword",                                    "settings": {"foreground": "#f3f4f5"}},   /* арифметические и логические операторы */
+        {"scope": "punctuation.separator",                      "settings": {"foreground": "#f3f4f5"}},   /* запятые между аргументами и двоеточия после if | while */
+        {"scope": "storage.type.format.python",                 "settings": {"foreground": "#c795ae"}},   /* определение фарматов типа :.2f */
+        {"scope": "support.type",                               "settings": {"foreground": "#95aec7",     /* декораторы + приведение типов int(), float() ...*/
+                                                                              "fontStyle": "italic"}},
+        {"scope": "punctuation.definition.decorator.python",    "settings": {"foreground": "#95aec7"}},   /* @ в декораторе python #cfac8d */
+        {"scope": "storage.type.function",                      "settings": {"foreground": "#c795ae",     /* определение def */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "storage.type.class",                         "settings": {"foreground": "#ebb3cf",     /* определение class */
+                                                                              "fontStyle": "italic"}},
+        {"scope": "support.type.exception.python",              "settings": {"foreground": "#ffaec7",     /* объекты-исключения */
+                                                                            "fontStyle": ""}},
+        {"scope": "storage.type",                               "settings": {"foreground": "#ff0000"}},   /* ??? */
+        {"scope": "meta.function-call.python",                  "settings": {"foreground": "#ff0000"}},   /* ??? */
+        {"scope": "invalid",                                    "settings": {"foreground": "#af1a3f"}},
+      ],
+    },
+  },
+  "workbench.settings.edotor": "json",
+  "workbench.settings.openDefaultSettings": true,
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editorAssociations": {
+    "*.ipynb": "jupyter-notebook"
+  },
+  "editor.lineHeight": 24,
+
+  "jupyter.interactiveWindowMode": "perFile",
+
+  "r.lsp.args": [
+    "--no-init-file"
+  ],
+//"r.lsp.path": "C:\\Users\\vlady\\AppData\\Local\\R\\R-4.1.0\\bin\\x64\\R.exe",
+  "r.lsp.debug": true,
+  "r.lsp.diagnostics": true,
+  "r.rterm.windows": "C:\\Users\\vlady\\AppData\\Local\\Anaconda3\\envs\\tenv\\Scripts\\radian.exe",
+//  "r.rterm.option": [
+//    "--no-save",
+//    "--no-restore"
+//    "--r-binary=C:\\Users\\vlady\\AppData\\Local\\R\\R-4.1.0\\bin\\x64\\R.exe"
+//  ],
+  "[r]": {
+    "files.encoding": "windows1251",
+    "files.autoGuessEncoding": true
+  },
+  "r.source.encoding": "windows1251",
+  "python.defaultInterpreterPath": "C:\\Users\\vlady\\AppData\\Local\\Anaconda3\\envs\\tenv\\python.exe",
+  "notebook.cellToolbarLocation": {
+    "default": "right",
+    "jupyter-notebook": "left"
+  },
+  "mssql.enableQueryHistoryCapture": false,
+  "r.bracketedPaste": true
+}
