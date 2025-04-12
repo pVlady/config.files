@@ -1,0 +1,365 @@
+/** Installed extensions:
+ * .NET Install Tool 19.3M 2.0  by Microsoft
+ * C# : 33.8M 2.5               by Microsoft
+ * C# DEv Kit : 9.0M 3.0        by Microsoft
+ * Code Runner : 33.2M 4.5      by Jun Han
+ * Code Spell Checker 14 0.0    by Street Side Software
+ * Code LLDB 8.4M 5.0           by Vadim Chugunov         debugger for Rust and more
+ * colorize 1.3M 4.5            by kamikillerto
+ * Crates Completer (?) 17.3K 3.0 by jedeop                 crate autocomplit
+ * Dev Container : 30.5M 4.5    by Microsoft
+ * Docker :44M 4.5              by Microsoft
+ * Docker DX : 371K 1.0         by Docker (docker.com)
+ * Even Better TOML : 2.9M 4.5  by tamasfe                a TOML language support
+ * Font Switcher : 290K 5.0     by Evan Buss
+ * GitHub Colpilot : 34M 4.0    by Github
+ * GitHub Copilit Chat : 28.2M 3.5 by GitHub
+ * IntelliCode : 54.2M 4.0      by Microsoft
+ * IntelliCode API : 38.4M 4.0  by Microsoft
+ * Markdown All in One : 10.7M 4.5 by Yu Zhang
+ * oh Lucy : 43.3K 5.0          by Hermitter
+ * Path Autocomplete : 2.1M 5.0 by Mihai Vilcu
+ * Path Intellisense : 15.9M 5.0 by Christian Kohler
+ * Prettier - Code formatter 56.1M 3.5 by Prettier (prettier.io)
+ * Pylance : 136.6M 3.0         by Microsoft
+ * Python : 164.7M 4.0          by Microsoft
+ * Python Debugger : 74.2M 4.5  by Microsoft
+ * Python Indent : 13.7M 4.0    by Kevin Rose
+ * Quarto : 192k 5.0            by Quarto (quarto.org)
+ * REditorSupport : 2.5M 5.0    by REditorSupport
+ * Remote - SSH : 26.6M 3.5     by Microsoft
+ * Remote - SSH: Editing Configuration Files : 30M 4.0 by Microsoft
+ * Remote Explorer : 18.7M 4.5  by Microsoft
+ * Russian - Code Spell Checker : 317K 4.5 by Street Side Software
+ * Rust Test Explorer : 149K 3.5 by Swellaby
+ * rust-analyzer : 4.6M 5.0     by rust-lang.org
+ * Symbols : 542K 5.0           by Miguel Solorio
+ * Test Adapter Converter : 4M 5.0 by Microsoft
+ * Test Explorer : 4.4M 4.5     by Holger Benl
+ * Trailing Spaces : 2.7M 5.0   by Shardul Mahadik
+ * vscode-pdf : 7.8M 4.5        by tomoki1207
+ * WSL : 34.2M 5.0              by Microsoft
+ * YAML : 21.2M 3.5             by Red Hat
+ *
+ * 1987 Theme : 14.6K 5.0       by annliu
+ * Adonis Theme : 13.6K 5.0     by Saeed Nazari
+ * Ayu : 3.0M 5.0               by teabyii
+ * Darcula Theme : 821K 5.0     by rokoroku
+ * GitHub Thene : 16M 4.5       by GitHub
+ * Quill Icons : 34K 4.0        by Chad Donohue
+ * theme : 140K 3.5            by hassanoof
+ * =====================================================================
+ * MORE ...
+ *   - Jupyter                   by Microsoft
+ *   - CSS Formatter             by Martin Aeschlimann
+ *   - XML Tools                 by Josh Johnson
+ *	 - Rainglow (theme)          by Dayle Rees
+ *   - Better Comments           by Aaron Bond
+ *   - Helium Icon Theme         by Helgard Richard Ferreira
+ *   - Terminal                  by Jun Han
+ *   - Git Graph                 by mhutchie
+ *   - SQLite                    by alexcvzz
+ * =====================================================================
+ * Fonts used:
+ *   - Fira Code
+ *   - PragmataPro
+ *   - Meslo LGS
+ */
+{
+	// ========== APPEARANCE ==========
+	"window.zoomLevel": 0.33,
+	"window.commandCenter": false, // панель инструментов
+	"workbench.layoutControl.enabled": false, // панель с иконками справа вверху
+	"window.density.editorTabHeight": "default", // высота вкладок default|compact
+	"editor.minimap.enabled": false,
+	"workbench.colorTheme": "Darcula",
+	"workbench.iconTheme": "quill-icons", // catppuccin-perfect-sequoia"|"Bearded Theme HC Minuit",
+	"workbench.productIconTheme": "el-vsc-v1-icons", // убрать иконки с вкладок; tool panel icons "fluent-icons"
+
+	"symbols.hidesExplorerArrows": false, // убрать стрелки в панели файлов
+	"workbench.activityBar.location": "hidden", // скрыть левую вертикальную панель
+	"workbench.editor.editorActionsLocation": "hidden", // скрыть иконки
+
+	// Cursor
+	"editor.cursorBlinking": "expand", // мигающий
+	"editor.cursorStyle": "line-thin", // тонкий
+	"editor.cursorSmoothCaretAnimation": "explicit",
+
+	"editor.bracketPairColorization.enabled": false, // иначе тормозит редактор
+	"editor.glyphMargin": false, // отступ слева от нумерации строк
+	"editor.scrollbar.horizontal": "hidden", // скрыть линейки прокрутки
+	"editor.scrollbar.vertical": "hidden",
+
+	// --------- FONTS ========
+	//"editor.fontFamily": "Fira Code Light, MesloLGS Nerd Font Mono, UbuntuMono Nerd Font Mono2, losevka Nerd Font Mono, RobotoMono Nerd Font Mono, JetBrains Mono, Monaspace Neon, Maple Mono, MonoLisa, Operator mono lig, Roboto Mono, DejaVu Sans Mono, Pragmata Pro Mono, Fira Code, monoki, Hasklig, IBM Plex Mono, Victor Mono, monospace", // шрифт подсказок
+	"editor.fontFamily": "Fira Code Light, MesloLGS Nerd Font Mono, JetBrains Mono, PragmataPro Mono Liga, Maple Mono, Cascadia Code, IBM Plex Mono, MonoLisa, Fira Code, Serala, monospace", // для расширения "Swuitch Font", позволяющего менять шрифты
+	"editor.fontSize": 12,
+	"editor.fontWeight": "400",
+	"editor.lineHeight": 22, // регулирует межстрочный интервал
+	"editor.fontLigatures": true,
+	"editor.inlayHints.fontFamily": "PragmataPro",
+	"chat.editor.fontFamily": "PragmataPro",
+	"editor.codeLensFontFamily": "PragmataPro",
+	"debug.console.fontFamily": "PragmataPro",
+
+	// ======== ПОДСВЕТКА СИНТАКСИСА ======
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"scope": [
+					"comment",
+					"entity.name.type.class",
+					"keyword",
+					"constant",
+					"storage.modifier",
+					"storage.type.class.js"
+				],
+				"settings": {
+					"fontStyle": "italic"
+				}
+			},
+			{
+				"scope": [
+					"invalid",
+					"keyword.operator",
+					"constant.numeric.css",
+					"keyword.other.unit.px.css",
+					"constant.numeric.decimal.js",
+					"constant.numeric.json"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+
+	// ========== EDITOR BEHAVIOUR ==========>
+	"editor.accessibilitySupport": "off",
+	"window.openFilesInNewWindow": "off",
+	"editor.hideCursorInOverviewRuler": true,
+
+	// разрешенные символы для Unicode Highlight
+	"editor.unicodeHighlight.allowedCharacters": {
+		"а": true,
+		"с": true,
+		"Т": true,
+		"б": true,
+		"е": true,
+		" ": true
+	},
+
+	// переносы слов
+	"editor.wordWrap": "bounded",
+	"editor.wrappingIndent": "same",
+	"editor.wordWrapColumn": 120,
+
+	"editor.tabSize": 2,
+	"editor.folding": false, // возможность сжатия блоков текста
+	"editor.insertSpaces": false, // использовать пробелы вместо Tab
+	"editor.smoothScrolling": true,
+
+	"editor.detectIndentation": true,
+	"editor.renderControlCharacters": false, // не отображать спецсимволы
+	"editor.suggestSelection": "first", // выбирать сразу первый элемент
+	"editor.scrollBeyondLastLine": true, // прокручивать окно ниже последней строки
+	"editor.multiCursorModifier": "ctrlCmd", // a Alt+click use to open object under cursor
+	"editor.quickSuggestionsDelay": 0, // минимальная задержка для  InteliSense
+	// управляет подсветкой символов, еоторые можно спутать
+	// с основными символаvb ASCII, кроме тех, которые
+	// являются общими для текущего пользовательского языкового стандарта
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+
+	// ========== HTML|JAVASCRIPT|TYPESCRIPT ==========>
+	// auto closing tags
+	"html.autoClosingTags": true,
+	"javascript.autoClosingTags": true,
+	"typescript.autoClosingTags": true,
+	"editor.linkedEditing": true, // связаннjое редактирования html-тегов
+	"html.completion.attributeDefaultValue": "singlequotes", // использовать для html одинарыне кавычки вместо двойных
+	"javascript.updateImportsOnFileMove.enabled": "always",
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"javascript.preferences.quoteStyle": "single",
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.format.semicolons": "remove", // удалять в конце ;
+	"typescript.format.semicolons": "remove",
+	"js/ts.implicitProjectConfig.experimentalDecorators": true, // при использовании декораторов
+
+	// ========== TERMINAL ==========
+	"terminal.integrated.fontFamily": "PragmataPro, Iosevka Nerd Font Mono",
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.tabs.enabled": false,
+	"terminal.integrated.cursorStyle": "line",
+
+	// ========== EXPLORER ==========
+	"explorer.confirmDelete": true,
+	"explorer.compactFolders": false, // чтобы открывались пустые папки
+	"explorer.confirmDragAndDrop": true,
+	"workbench.editor.tabSizing": "shrink", // уменьшать табы, если мало места
+	"workbench.startupEditor": "newUntitledFile", // открыть пустой файл при запуске редактора
+	// скрыть эти папки (по умолчанию скрыты .git,.svn,.hg,CVS,.DS_Store.Thumbs.db)
+	"files.exclude": {
+		"**/.expo": true,
+		"**/.expo-shared": true,
+		"**/.idea": true,
+		"**/.nuxt": true
+	},
+
+	// ========== ФОРМАТИРОВАНИЕ ==========
+	"editor.inlineSuggest.enabled": true, // подсказки
+	"prettier.semi": false,
+	"prettier.useTabs": true,
+	"editor.formatOnSave": true,
+	"prettier.singleQuote": true, // одинарные кавычки вместо двойных
+	"prettier.jsxSingleQuote": true,
+	"editor.codeActionsOnSave": {
+		"source.organizeImports": "explicit"
+	},
+	"prettier.arrowParens": "avoid",
+	"editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	//	"[prisma]": { "editor.defaultFormatter": "Prisma.prisma" },
+	//	// насройка Laravel
+	//	"[blade]": { "editor.defaultFormatter": "onecentlin.laravel-blade" },
+	//	"[php]": { "editor.defaultFormatter": "DEVSENSE.phptools-vscode" },
+
+	// ========== BREADCRUMBS ==========
+	"breadcrumbs.icons": false,
+	"breadcrumbs.showKeys": false,
+	"breadcrumbs.showFiles": false,
+	"breadcrumbs.symbolPath": "off", // on|off|last — что показывать
+	"breadcrumbs.showArrays": false,
+	"breadcrumbs.showEvents": false,
+	"breadcrumbs.showFields": false,
+	"breadcrumbs.showClasses": false,
+	"breadcrumbs.showMethods": false,
+	"breadcrumbs.showBooleans": false,
+	"breadcrumbs.showFunctions": false,
+	"breadcrumbs.showConstants": false,
+	"breadcrumbs.showEnumMembers": false,
+	"breadcrumbs.showConstructors": false,
+
+	// ========== ПРОВЕРКА ОРФОГРАФИИ ==========>
+	"cSpell.language": "en,ru",
+	"cSpell.enabled": true,
+	"cSpell.userWords": [],
+	"cSpell.enabledFileTypes": {
+		"css": true,
+		"scss": true,
+		"json": true,
+		"md": true,
+		"py": true,
+		"rst": true,
+		"blade": false,
+		"jsx": false,
+		"tsx": false,
+		"ts": false,
+		"js": false,
+		"sass": false,
+		"vue": false
+	},
+
+	// ========== ОТКЛЮЧЕНИЕ ОТЛАДКИ (если не используется) ==========>
+	"debug.toolBarLocation": "hidden",
+	"debug.focusWindowOnBreak": false,
+	"debug.showInlineBreakpointCandidates": false,
+	"debug.showBreakpointsInOverviewRuler": false,
+
+	// ========== PLUGINS ==========>
+	// =============================>
+	//  Trailing Spaces
+	"trailing-spaces.trimOnSave": true,
+	"trailing-spaces.liveMatching": false, // отменить online контроль
+	"trailing-spaces.syntaxIgnore": ["markdown"],
+	"trailing-spaces.showStatusBarMessage": false,
+
+	// Markdown All in One
+	"markdown.extension.toc.levels": "1..4",
+
+	// Python
+	"python.languageServer": "Pylance",
+
+	// Emmet
+	"emmet.includeLanguages": {
+		"blade": "html:,",
+		"javascript": "javascriptreact"
+	},
+	"emmet.triggerExpansionOnTab": true, // вызывать по Tab
+
+	// ========== OTHER ==========
+	"security.workspace.trust.untrustedFiles": "open",
+	"window.confirmBeforeClose": "keyboardOnly",
+	"editor.stickyScroll.scrollWithEditor": false,
+	"workbench.tree.enableStickyScroll": false,
+	"editor.stickyScroll.enabled": true,
+	"redhat.telemetry.enabled": true,
+
+	"workbench.editor.customLabels.patterns": {
+		"**/app/**/[[]*[]]/[[]*[]]/page.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/[[]*[]]/page.tsx": "${dirname(1)}/${dirname}/page.tsx",
+		"**/app/**/page.tsx": "${dirname}/page.tsx",
+		"**/app/**/[[]*[]]*/[[]*[]]/layout.tsx": "${dirname(2)}/${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/[[]*[]]/layout.tsx": "${dirname(1)}/${dirname}/layout.tsx",
+		"**/app/**/layout.tsx": "${dirname}/layout.tsx"
+	},
+	"workbench.statusBar.visible": false, // т.к. все работает через HotKeys
+
+	"files.defaultLanguage": "plaintext",
+	"diffEditor.ignoreTrimWhitespace": false, // игнорировать пробелы в diff
+	//
+	"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+	// не открывать репозиторий в родительских папках
+	"git.openRepositoryInParentFolders": "never",
+	"git.enableSmartCommit": true,
+	"github.copilot.enable": {
+		"quarto": false,
+		"markdown": false
+	},
+
+	// перейти сразу на объект по Alt+click (без выбора вариантов)
+	"editor.gotoLocation.multipleDefinitions": "goto", // переход по ПКМ+Alt сразу в definition (без промежуточного окна)
+	// скрыть подсказку в пустом редакторе
+	"workbench.editor.empty.hint": "hidden",
+	"editor.renderWhitespace": "none",
+	"r.rpath.windows": "C:\\Users\\pvlad\\AppData\\Local\\R-4.3.3\\bin\\R.exe",
+	"r.session.levelOfObjectDetail": "Detailed",
+	"r.rterm.windows": "C:\\Users\\pvlad\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\radian.exe",
+	"terminal.integrated.profiles.windows": {
+		"PowerShell": {
+			"source": "PowerShell",
+			"icon": "terminal-powershell"
+		},
+		"Command Prompt": {
+			"path": [
+				"${env:windir}\\Sysnative\\cmd.exe",
+				"${env:windir}\\System32\\cmd.exe"
+			],
+			"args": [],
+			"icon": "terminal-cmd"
+		},
+		"Git Bash": {
+			"source": "Git Bash"
+		},
+		"Radian": {
+			"path": "C:\\Users\\pvlad\\AppData\\Local\\Programs\\Python\\Python311\\Scripts\\radian.exe"
+		}
+	},
+
+	"quarto.visualEditor.spellingDictionary": "ru_RU",
+	"cSpell.customDictionaries": {
+		"custom-dictionary-user": {
+			"name": "custom-dictionary-user",
+			"path": "~/.cspell/custom-dictionary-user.txt",
+			"addWords": true,
+			"scope": "user"
+		}
+	},
+	"remote.SSH.remotePlatform": {
+		"lbu": "linux",
+		"srvx": "linux",
+		"wdx": "linux"
+	}
+}
+
+// Red Group: https://www.youtube.com/watch?v=zR9AwQMaQWE
+//      2024: https://www.youtube.com/watch?v=_oKVkJj6C6Y
