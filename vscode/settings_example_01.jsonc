@@ -1,0 +1,220 @@
+/** https://gist.github.com/cloud11665/2e524b3d527e16b1cfa2f91422e5091b
+* Installed extensions:
+*   - Python                    by Microsoft
+*   - Jupyter                   by Microsoft
+*   - Jinja                     by wholroyd
+*   - C/C++ Compile Run         by danielpinto8zz6
+*
+*   - Pylance                   by Microsoft
+*   - Python postfix completion by filwaline
+*   - CSS Formatter             by Martin Aeschlimann
+*   - XML Tools                 by Josh Johnson
+*   - Path Intellisense         by Christian Kohler
+*   - Kite AI Code AutoComp.    by Kite
+*
+*	- Rainglow                  by Dayle Rees
+*   - Better Comments           by Aaron Bond
+*   - Minimalist Product Icon t.by ElAnandKumar
+*   - Helium Icon Theme         by Helgard Richard Ferreira
+*
+*	- Disncord Presence         by Noel
+*   - Terminal                  by Jun Han
+*   - Polacode-2020             by Jeff Hykin
+*   - Git Graph                 by mhutchie
+*   - SQLite                    by alexcvzz
+*
+*Fonts used:
+*   - Fira Code
+*/
+{
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+
+    "statusBar.background": "#45966E",
+
+    "window.newWindowDimensions": "offset",
+    "window.restoreWindows": "folders",
+    "window.titleSeparator": "-",
+    "window.title": "${dirty} Editing ${activeEditorShort} ${separator} ${activeEditorMedium}",
+    "window.zoomLevel": 1,
+    "window.autoDetectHighContrast": false,
+    "window.customMenuBarAltFocus": false,
+    "window.menuBarVisibility": "visible",
+    "window.openFoldersInNewWindow": "on",
+
+    "workbench.editor.mouseBackForwardToNavigate": true,
+    "workbench.editor.tabSizing": "shrink",
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.editor.openSideBySideDirection": "down",
+    "workbench.editor.labelFormat": "short",
+    "workbench.editor.pinnedTabSizing": "shrink",
+    "workbench.editor.limit.value": 8,
+    "workbench.list.smoothScrolling": true,
+    "workbench.list.openMode": "singleClick",
+    "workbench.list.multiSelectModifier": "ctrlCmd",
+    "workbench.activityBar.visible": true,
+    "workbench.enableExperiments": false,
+    "workbench.sash.size": 4,
+    "workbench.settings.editor": "json",
+    "workbench.productIconTheme": "el-vsc-v1-icons",
+    "workbench.quickOpen.preserveInput": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "workbench.commandPalette.history": 64,
+    "workbench.iconTheme": "helium-icon-theme",
+    "workbench.sideBar.location": "right",
+    "workbench.tree.indent": 12,
+    "workbench.tips.enabled": false,
+    "workbench.preferredHighContrastColorTheme": "Jewel Contrast (rainglow)",
+    "workbench.preferredLightColorTheme": "Jewel Light (rainglow)",
+    "workbench.preferredDarkColorTheme": "Jewel (rainglow)",
+    "workbench.list.horizontalScrolling": true,
+    "workbench.tree.renderIndentGuides": "none",
+    "workbench.activityBar.iconClickBehavior": "focus",
+    "workbench.tree.expandMode": "doubleClick",
+    "workbench.settings.enableNaturalLanguageSearch": false,
+    "workbench.settings.useSplitJSON": true,
+    "workbench.colorTheme": "Jewel (rainglow)",
+    "workbench.editorAssociations": [
+        {
+            "viewType": "jupyter-notebook",
+            "filenamePattern": "*.ipynb"
+        }
+    ],
+
+    "editor.cursorBlinking": "solid",
+    "editor.cursorWidth": 1,
+    "editor.cursorStyle": "line-thin",
+    "editor.minimap.renderCharacters": false,
+    "editor.minimap.side": "left",
+    "editor.minimap.maxColumn": 80,
+    "editor.tabSize": 2,
+    "editor.formatOnSaveMode": "modifications",
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false,
+    "editor.overviewRulerBorder": false,
+    "editor.quickSuggestionsDelay": 0,
+    "editor.foldingStrategy": "indentation",
+    "editor.mouseWheelZoom": true,
+    "editor.fontFamily": "fira code",
+    "editor.fontWeight": "100",
+
+    "files.autoGuessEncoding": true,
+    "files.defaultLanguage": "${activeEditorLanguage}",
+    "files.eol": "\n",
+    "files.autoSaveDelay": 60000,
+    "files.enableTrash": true,
+    "files.encoding": "utf8",
+    "files.maxMemoryForLargeFilesMB": 2048,
+    "files.restoreUndoStack": true,
+    "files.participants.timeout": 0,
+    "files.trimTrailingWhitespace": true,
+
+    "explorer.compactFolders": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "smart",
+    "explorer.sortOrder": "type",
+    "explorer.confirmDelete": false,
+
+    "search.smartCase": true,
+    "search.searchOnType": true,
+
+    "discord.workspaceElapsedTime": true,
+    "discord.largeImage": "Editing a {lang} file",
+    "discord.detailsEditing": "Editing {gitreponame}, {filename}",
+    "discord.detailsDebugging": "Debugging {gitreponame}, {filename}",
+    "discord.detailsIdle": "Slacking off in the editor",
+    "discord.largeImageIdle": "Prolly browsing github or sth",
+    "discord.smallImage": "{gitreponame}",
+
+
+    "better-comments.multilineComments": true,
+    "better-comments.tags": [
+        {"tag": "!","color": "#FF2D00","strikethrough": false,"underline": false,"backgroundColor": "transparent","bold": false,"italic": false},
+        {"tag": "?","color": "#3498DB","strikethrough": false,"underline": false,"backgroundColor": "transparent","bold": false,"italic": false},
+        {"tag": "todo","color": "#FF8C00","strikethrough": false,"underline": false,"backgroundColor": "transparent","bold": false,"italic": false}
+    ],
+
+    "kite.enableSnippets": false,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "tabnine.experimentalAutoImports": true,
+
+    "terminal.integrated.rendererType": "dom",
+    "terminal.integrated.cursorStyle": "line",
+    "terminal.enableAppInsights": false,
+
+    "editor.insertSpaces": false,
+    "editor.fontLigatures": true,
+    "editor.smoothScrolling": true,
+    "editor.copyWithSyntaxHighlighting": false,
+    "editor.snippetSuggestions": "bottom",
+    "editor.suggest.insertMode": "replace",
+    "editor.accessibilitySupport": "off",
+    "editor.renderLineHighlightOnlyWhenFocus": true,
+    "editor.renderLineHighlight": "gutter",
+    "editor.scrollBeyondLastLine": false,
+    "editor.unusualLineTerminators": "off",
+    "editor.find.addExtraSpaceOnTop": false,
+    "editor.find.loop": false,
+    "editor.fontSize": 20,
+    "editor.codeLensFontFamily": "fira code italic",
+    "editor.find.autoFindInSelection": "multiline",
+    "editor.cursorSurroundingLinesStyle": "all",
+    "editor.wordBasedSuggestions": false,
+    "editor.folding": false,
+    "editor.hover.delay": 600,
+    "editor.lineNumbers": "relative",
+    "editor.dragAndDrop": false,
+    "editor.selectionHighlight": false,
+
+    "diffEditor.maxComputationTime": 0,
+    "diffEditor.renderIndicators": false,
+    "diffEditor.wordWrap": "off",
+
+    "update.mode": "manual",
+
+    "screencastMode.verticalOffset": 2,
+    "screencastMode.fontSize": 50,
+
+    "git.autofetchPeriod": 360,
+    "git.autoStash": true,
+    "git.autofetch": true,
+
+    "search.actionsPosition": "auto",
+
+    "json.schemaDownload.enable": false,
+
+    "c-cpp-compile-run.run-in-external-terminal": false,
+    "c-cpp-compile-run.cpp-flags": "-D_FORTIFY_SOURCE=2 -D_GLIBCXX_ASSERTIONS -fasynchronous-unwind-tables -fexceptions -fstack-protector-all -fstack-protector-strong -g -grecord-gcc-switches -O2 -pipe -Wall -Werror=format-security -Werror=implicit-function-declaration -Wpedantic -pedantic-errors -ftemplate-depth=2147483647",
+
+
+    "pylance.insidersChannel": "daily",
+    "python.linting.enabled": true,
+    "python.languageServer": "Pylance",
+    "python.autoUpdateLanguageServer": true,
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.autoComplete.addBrackets": false,
+    "python.formatting.blackArgs": [],
+    "python.autoComplete.showAdvancedMembers": true,
+    "python.insidersChannel": "daily",
+    "python.analysis.completeFunctionParens": true,
+    "python.analysis.typeCheckingMode": "basic",
+    "python.showStartPage": false,
+    "python.linting.pylintArgs": [
+    ],
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+
+    "extensions.autoUpdate": false,
+    "extensions.autoCheckUpdates": false,
+    "extensions.ignoreRecommendations": true,
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportWildcardImportFromLibrary": "none",
+        "reportUnboundVariable": "none",
+        "reportGeneralTypeIssues": "none"
+    }
+}
