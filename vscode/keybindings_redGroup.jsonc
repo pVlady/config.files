@@ -1,0 +1,142 @@
+[
+	// https://www.youtube.com/watch?v=_oKVkJj6C6Y
+	{ // открытие терминала
+		"key": "ctrl+escape",
+		"command": "workbench.action.terminal.toggleTerminal",
+		"when": "terminal.active"
+	},
+	{ // переход во внутрь (как в WebStorm)
+		"key": "cmd+b",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+	{ // создание файла
+		"key": "a",
+		"command": "explorer.newFile",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{ // создание папки
+		"key": "shift+a",
+		"command": "explorer.newFolder",
+		"when": "filesExplorerFocus && !inputFocus"
+	},
+	{ // быстрая подсказка
+		"key": "alt+enter",
+		"command": "editor.action.quickFix",
+		"when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "alt+enter",
+		"command": "workbench.action.terminal.quickFix",
+		"when": "terminalFocus && terminalProcessSupported"
+	},
+	{
+		"key": "alt+enter",
+		"command": "problems.action.showQuickFixes",
+		"when": "problemFocus"
+	},
+	{ // открытие Проводника с переводом фокуса
+		"key": "cmd+shift+e", // when Explorer not open
+		"command": "workbench.files.action.focusFilesExplorer",
+		"when": "!explorerViewletVisible"
+	},
+	{ // открытие Проводника с переводом фокуса
+		"key": "cmd+shift+e", // when Explorer open
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletVisible"
+	},
+	{
+		"key": "cmd+k cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "shift+cmd+ctrl+e",
+		"command": "workbench.view.explorer"
+	},
+	{ // скрытие статус бара
+		"key": "shift+cmd+ctrl+s",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{ // быстрое переключение между вкладками
+		"key": "ctrl+tab",
+		"command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+    "key": "ctrl+tab",
+		"command": "-workbench.action.quicOpenNavigateNextInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+	},
+	{
+    "key": "shift+cmd+]",
+		"command": "-workbench.action.nextEditor"
+	},
+	{
+		"key": "ctrl+tab",
+		"command": "workbench.action.nextEditor"
+	},
+  {
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quicOpenNavigatePreviousInEditorPicker",
+		"when": "inEditorsPicker && inQuickOpen"
+  },
+	{
+		"key": "ctrl+shift+tab",
+		"command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup",
+		"when": "!activeEditorGroupEmpty"
+	},
+	{
+    "key": "shift+cmd+[",
+		"command": "-workbench.action.previousEditor"
+	},
+	{
+		"key": "ctrl+shift+tab",
+		"command": "workbench.action.previousEditor"
+	},
+	{ // аналог F2
+		"key": "pageup pageup",
+		"command": "editor.action.rename",
+		"when": "editorHarRenameProvider && editorTextFocus && !editorReadonly"
+	},
+	{
+		"key": "delete delete",
+		"command": "editor.action.deleteLines",
+		"when": "textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "cmd+[Comma]",
+		"command": "breadcrumbs.focusAndSelect"
+	},
+	{
+		"key": "cmd+,",
+		"command": "-workbench.action.openSettings"
+	},
+	{ // open source control (git)
+		"key": "shift+cmd+g",
+		"command": "workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm",
+		"when": "workbench.scm.active"
+	},
+	{
+		"key": "shift+cmd+b",
+		"command": "editor.action.goToTypeDefinition"
+	},
+	{
+		"key": "shift+cmd+c",
+		"command": "List.collapseAll",
+		"when": "ListFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "shift+cmd+up",
+		"command": "-list.collapseAll",
+		"when": "ListFocus && !inputFocus && !treestickyScrollFocused"
+	},
+	{
+		"key": "cmd+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+	}
+]
