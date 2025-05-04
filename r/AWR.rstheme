@@ -22,7 +22,7 @@
   --invisible-element: #747C84;     /* the color for invisible element */
   --md-headings: #F3E8B9;           /* the heading in R Markdown files */
   --md-heading-prefix: #A69F82;     /* `#` in heading of R Markdown file */
-  --md-italic #a8d0e6;             /* the text *...* in R Markdown file */
+  --md-italic #A8D0E6;              /* the text *...* in R Markdown file */
   --md-bold: #F6C965;               /* the text **...** in R Markdown file #F3E8B9 */
   --md-code: #C6BFAC;               /* the code block in R Markdown file */
   --md-meta: #C6D1AA;               /* the metadata entrances in R Markdown file */
@@ -32,74 +32,72 @@
   --light-violet: #AE95C7;
   --orange: #D95B00;
   --azure: #65f6d9;
-  --grey:
   --more-bg: #653618;
   --test: #bb0000;
   --test2: #00bb7d;
   --test3:rgb(0, 34, 229);
-    --my-red: var(red)                        /* using existing color */
+  --my-red: var(red)                        /* using existing color */
 }
-.ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph, .rstudio-themes-flat.ace_editor_theme, .rstudio-themes-flat .ace_editor_theme {
+.ace_editor, .rstudio-themes-flat.ace_editor_theme .profvis-flamegraph,
+.rstudio-themes-flat.ace_editor_theme,
+.rstudio-themes-flat .ace_editor_theme {
   background-color: var(--bg); color: var(--fg); }
-.ace_cursor { color: var(--fg); }                             /* the cursor in the editor window */
-
-.ace_fold { background: var(--fold-collapsed);                /* fold collapsed markers */
+.ace_cursor { color: var(--fg); }                     /* the cursor in the editor window */
+.ace_fold { background: var(--fold-collapsed);        /* fold collapsed markers */
             border-color: var(--fold-collapsed); }
 
-.ace_string { color: var(--strings); }                         /* string literals */
-.ace_comment { color: var(--comment);                          /* comments #949CA4; */
+.ace_string { color: var(--strings); }                /* string literals */
+.ace_comment { color: var(--comment);                 /* comments #949CA4; */
                font-style: italic;
                font-family: Maple\ Mono;
                font-size: 12px; }
+
+.ace_keyword { color: var(--keywords); }              /* keywords like `function`, `if`, `else`, `stop` and operators */
+.ace_keyword.ace_operator { color: var(--fg); }       /* operators like `(, )`, `=`, `+`, and `-`. This value will override the settings in the `.ace_keyword` for operators */
+.ace_identifier.ace_support.ace_function { color: var(--functions);    /* the function call */
+                                           font-weight: 200; }
+.ace_support.ace_class { color: var(--libs-classes); font-style: italic; }  /* lib:: */
+.ace_support.ace_type { color: var(--fg); }
 .ace_constant { color: var(--constants); }            /* constants like TRUE, FALSE, and numeric literals */
 .ace_constant.ace_numeric { color: var(--numbers); }  /* numeric literals (override .ace_constant); Also **...** text in R Markdown files if not explicitly */
 .ace_constant.ace_language { color: var(boolean); }   /* language constants like TRUE and FALSE (override .ace_constant). Also *...* in R Markdown files if not explicitly */
-.ace_line .ace_constant.ace_numeric.ace_text {  /* the text **...** in R Markdown file */
+.ace_line .ace_constant.ace_numeric.ace_text {        /* the text **...** in R Markdown file */
     color: var(--md-bold);
     font-family: Fira\ Sans;
     font-size: 12px;
     font-weight: 400; }
-.ace_line .ace_constant.ace_language.ace_boolean.ace_text {	/* `*...*` in R Markdown file */
-  color: var(--md-italic);
+.ace_line .ace_constant.ace_language.ace_boolean.ace_text {	/* the text *...* in R Markdown file */
+  color: #A8D0E6;
   font-family: Fira\ Sans;
   font-size: 12px;
   font-style: italic; }
-
 .ace_line .ace_markup.ace_href { color: var(--md-href);  /* внешняя ссылка в R Markdown файле */
                                  font-style: italic; }
-/*
-.ace_line .ace_keyword { color: var(--md-reference); }   [ссылка] в R Markdown файле
-.ace_marker { color: var(--md-href); font-style: italic; } внешняя ссылка в документе
-*/
-
-
-.ace_keyword { color: var(--keywords); }                      /* keywords like `function`, `if`, `else`, `stop` and operators */
-.ace_keyword.ace_operator { color: var(--fg); }               /* operators like `(, )`, `=`, `+`, and `-`. This value will override the settings in the `.ace_keyword` for operators */
-
-.ace_constant.ace_character.ace_escape { color: var(--keywords); }   /**** NOT DEFINED ****/
-.ace_keyword.ace_other.ace_unit { color: #C7C795; }                /**** NOT DEFINED ****/
-
-.ace_support.ace_function { color: var(--md-code); }                   /* code block in R Markdown documents */
-.ace_identifier.ace_support.ace_function { color: var(--functions);    /* the function call */
-                                           font-weight: 200; }
-.ace_heading	{ color: var(--md-headings);                   /* headings in R Markdown files */
+.ace_support.ace_function { color: var(--md-code); }     /* code block in R Markdown documents */
+.ace_heading	{ color: var(--md-headings);               /* headings in R Markdown files */
                 font-family: Franklin\ Gothic\ Book;
                 font-size: 14px; }
 .ace_markup.ace_heading { color: var(--md-heading-prefix); }  /* the characters that start a heading in R Markdown files */
 .ace_meta.ace_tag { color: var(--md-meta); }	                /* metadata tags in R Markdown documents, like `title` and `output` */
 
-.ace_print-margin { width: 1px; background: #e8e8e8; }      /* the color and style, if applicable, of the line-width margin that can be enabled or disabled through Global Options > Code > Display > Show margin */
+/*
+.ace_line .ace_keyword { color: var(--md-reference); }   [ссылка] в R Markdown файле
+.ace_marker { color: var(--md-href); font-style: italic; } внешняя ссылка в документе
+*/
 
+.ace_constant.ace_character.ace_escape { color: var(--keywords); }   /**** NOT DEFINED ****/
+.ace_keyword.ace_other.ace_unit { color: #C7C795; }                /**** NOT DEFINED ****/
+
+.ace_print-margin { width: 1px; background: #b9b8a3; }         /* the color and style of the vertical line: Global Options > Code > Display > Show margin */
 .ace_selection.ace_start { box-shadow: 0 0 3px 0px var(--selection-bg); /* #1C2023 the highlighting for the start of the currently selected block of lines */
                            border-radius: 2px; }
-.ace_invisible { color: var(--invisible-element); }           /* invisible characters (visibility set in Global Options > Code Display > Show whitespace characters) */
-.ace_gutter { background: var(--bg); color: #72767A; }      /* the gutter (the panel for line numbers, breakpoints and fold widgets */
+.ace_invisible { color: var(--invisible-element); }             /* invisible characters (visibility set in Global Options > Code Display > Show whitespace characters) */
+.ace_gutter { background: var(--bg); color: #72767A; }        /* the gutter (the panel for line numbers, breakpoints and fold widgets */
 /* DNW: .ace_gutter-active-line { background: #747c84; }  the gutter at the active line * /
-
 .ace_marker-layer .ace_selection { background: var(--selection-bg); }    /* the highlighting for the currently selected line or block of lines */
-.ace_marker-layer .ace_bracket { margin: -1px 0 0 -1px;        /* the highlighting on matching brackets */
+.ace_marker-layer .ace_bracket { margin: -1px 0 0 -1px;         /* the highlighting on matching brackets */
                                  border: 1px solid var(--invisible-element); }
-.ace_bracket { margin: 0 !important; border: 0 !important;     /* overrides default styling for matching bracket highlighting provided by Ace */
+.ace_bracket { margin: 0 !important; border: 0 !important;      /* overrides default styling for matching bracket highlighting provided by Ace */
                background-color: rgba(128, 128, 128, 0.5); }
 
 .ace_paren_color_1 { color: #95AEC7; }	/* the rainbow parentheses */
@@ -110,18 +108,16 @@
 .ace_paren_color_6 { color: #e8e8e8; }	/* the rainbow parentheses */
 
 /*
-  .ace_indent-guide	{ color: #xxxxxx; }  — the indent guide
+  .ace_indent-guide	{ color: var(--invisible); }  — the indent guide
   .ace_marker-layer .ace_active-debug-line	Changes the highlighting on the line of code which is currently being debugged
 */
 
 /*** function highlight color (+ .ace_support.ace_function above) */
-.ace_entity.ace_name.ace_function { color: #14f927 } /* function highlight color */
+.ace_entity.ace_name.ace_function { color: #14f927 } /* DNW function highlight color */
 .ace_variable { color: #C7AE95; }
 
 /*.ace_function { color: var(--functions); }   вызовы функций */
 
-.ace_support.ace_class { color: var(--libs-classes); font-style: italic; }  /* lib:: */
-.ace_support.ace_type { color: var(--fg); }
 
 /* ************************************************************************ */
 .ace_marker-layer .ace_step { background: rgb(198, 219, 174); }
@@ -749,4 +745,3 @@
    background: rgba(255, 255, 255, 0.15);
    border: none
 }
-
