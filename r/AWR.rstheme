@@ -8,6 +8,7 @@
 :root {
   --bg: #1C2023;                    /* the main background color */
   --fg: #C7CCD1;                    /* the main foreground color */
+  --more-bg: #653618;               /* selection background */
   --selection-bg: #3F4347;          /* the selection background color (including current line) */
   --fold-collapsed: #C795AE;        /* the background color for a fold collapsed markers */
 
@@ -15,7 +16,7 @@
   --comment: #B2B0A9;               /* the comment */
   --strings: #AECABD;               /* text constant */
   --constants: #E6B383;             /* the constant beside numeric and bool literal if they define separately */
-  --numbers: #F3E8B9;               /* the numeric literal & **...** text in R Markdown file if not define explicitly */
+  --numbers: #FFD06A;               /* the numeric literal & **...** text in R Markdown file if not define explicitly */
   --boolean: #D9A55B;               /* TRUE, FALSE & *...* text in R Markdown file if not define explicitly */
   --functions: #F5DEB0;             /* the function call */
   --libs-classes: #F6C965;          /* the class name & lib:: prefix */
@@ -32,7 +33,7 @@
   --light-violet: #AE95C7;
   --orange: #D95B00;
   --azure: #65f6d9;
-  --more-bg: #653618;
+  --nice: #FFDEB1;
   --test: #bb0000;
   --test2: #00bb7d;
   --test3:rgb(0, 34, 229);
@@ -54,10 +55,11 @@
 
 .ace_keyword { color: var(--keywords); }              /* keywords like `function`, `if`, `else`, `stop` and operators */
 .ace_keyword.ace_operator { color: var(--fg); }       /* operators like `(, )`, `=`, `+`, and `-`. This value will override the settings in the `.ace_keyword` for operators */
-.ace_identifier.ace_support.ace_function { color: var(--functions);    /* the function call */
-                                           font-weight: 200; }
-.ace_support.ace_class { color: var(--libs-classes); font-style: italic; }  /* lib:: */
-.ace_support.ace_type { color: var(--fg); }
+.ace_identifier.ace_support.ace_function {            /* the function call */
+                color: var(--functions); }
+.ace_support.ace_class { color: var(--libs-classes);  /* lib:: */
+                         font-style: italic; }
+.ace_support.ace_type { color: var(--test3); }
 .ace_constant { color: var(--constants); }            /* constants like TRUE, FALSE, and numeric literals */
 .ace_constant.ace_numeric { color: var(--numbers); }  /* numeric literals (override .ace_constant); Also **...** text in R Markdown files if not explicitly */
 .ace_constant.ace_language { color: var(boolean); }   /* language constants like TRUE and FALSE (override .ace_constant). Also *...* in R Markdown files if not explicitly */
@@ -71,7 +73,7 @@
   font-family: Fira\ Sans;
   font-size: 12px;
   font-style: italic; }
-.ace_line .ace_markup.ace_href { color: var(--md-href);  /* внешняя ссылка в R Markdown файле */
+.ace_line .ace_markup.ace_href { color: var(--md-href);  /* external link in RMarkdown file */
                                  font-style: italic; }
 .ace_support.ace_function { color: var(--md-code); }     /* code block in R Markdown documents */
 .ace_heading	{ color: var(--md-headings);               /* headings in R Markdown files */
@@ -79,22 +81,26 @@
                 font-size: 14px; }
 .ace_markup.ace_heading { color: var(--md-heading-prefix); }  /* the characters that start a heading in R Markdown files */
 .ace_meta.ace_tag { color: var(--md-meta); }	                /* metadata tags in R Markdown documents, like `title` and `output` */
-
 /*
 .ace_line .ace_keyword { color: var(--md-reference); }   [ссылка] в R Markdown файле
 .ace_marker { color: var(--md-href); font-style: italic; } внешняя ссылка в документе
 */
-
 .ace_constant.ace_character.ace_escape { color: var(--keywords); }   /**** NOT DEFINED ****/
 .ace_keyword.ace_other.ace_unit { color: #C7C795; }                /**** NOT DEFINED ****/
 
-.ace_print-margin { width: 1px; background: #b9b8a3; }         /* the color and style of the vertical line: Global Options > Code > Display > Show margin */
-.ace_selection.ace_start { box-shadow: 0 0 3px 0px var(--selection-bg); /* #1C2023 the highlighting for the start of the currently selected block of lines */
-                           border-radius: 2px; }
+.ace_selection { background: var(--selection-bg); }             /* the highlighting for the currently selected line or block of lines */
+.ace_selected-word { background: var(--more-bg); }              /* word highlighting (ex. in search) */
+.ace_marker-layer .ace_selection { background: var(--more-bg); }  /* the highlighting for the currently selected line or block of lines */
+/* .ace_selection.ace_start { box-shadow: 0 0 3px 0px var(--more-bg); border-radius: 2px; }   #1C2023 the highlighting for the start of the currently selected block of lines */
+
+.ace_print-margin { width: 1px; background: #b9b8a3; }        /* the color and style of the vertical line: Global Options > Code > Display > Show margin */
 .ace_invisible { color: var(--invisible-element); }             /* invisible characters (visibility set in Global Options > Code Display > Show whitespace characters) */
 .ace_gutter { background: var(--bg); color: #72767A; }        /* the gutter (the panel for line numbers, breakpoints and fold widgets */
+
 /* DNW: .ace_gutter-active-line { background: #747c84; }  the gutter at the active line * /
-.ace_marker-layer .ace_selection { background: var(--selection-bg); }    /* the highlighting for the currently selected line or block of lines */
+
+/* .ace_function { color: var(--functions); }   вызовы функций */
+
 .ace_marker-layer .ace_bracket { margin: -1px 0 0 -1px;         /* the highlighting on matching brackets */
                                  border: 1px solid var(--invisible-element); }
 .ace_bracket { margin: 0 !important; border: 0 !important;      /* overrides default styling for matching bracket highlighting provided by Ace */
@@ -107,16 +113,12 @@
 .ace_paren_color_5 { color: #00aa00; }	/* the rainbow parentheses */
 .ace_paren_color_6 { color: #e8e8e8; }	/* the rainbow parentheses */
 
-/*
-  .ace_indent-guide	{ color: var(--invisible); }  — the indent guide
-  .ace_marker-layer .ace_active-debug-line	Changes the highlighting on the line of code which is currently being debugged
-*/
+.ace_indent-guide	{ color: var(--invisible); }                  /* the indent guide */
+.ace_marker-layer .ace_active-debug-line { color: var(test2); }	/* currently debugged line of code */
 
 /*** function highlight color (+ .ace_support.ace_function above) */
 .ace_entity.ace_name.ace_function { color: #14f927 } /* DNW function highlight color */
 .ace_variable { color: #C7AE95; }
-
-/*.ace_function { color: var(--functions); }   вызовы функций */
 
 
 /* ************************************************************************ */
